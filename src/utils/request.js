@@ -51,7 +51,7 @@ export default function request(url, options) {
     const token = localStorage.getItem('accessToken');
     if (token) {
         newOptions.headers = {
-            Authorization: `Bearer ${token}`,
+            Authorization: `${token}`,
         };
     }
 

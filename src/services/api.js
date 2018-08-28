@@ -113,10 +113,11 @@ export async function fakeAccountLogin(params) {
 }
 
 export async function logout() {
-  return request('/api/users/logout', {
-    method: 'POST',
-  });
+    return request('/api/users/logout', {
+        method: 'POST',
+    });
 }
+
 
 
 export async function fakeRegister(params) {

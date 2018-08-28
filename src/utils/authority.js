@@ -7,6 +7,7 @@ export function getAuthority() {
     }
     return 'admin';
   } else {
+    setCookie('returnUrl', 'http://app.aiblogs.cn/');
     location.href = 'http://passport.aiblogs.cn/';
   }
 }
@@ -25,8 +26,9 @@ export function setCookie(name, value, date)
 {
     const exp = new Date(date);    // new Date("December 31, 9998");
     exp.setTime(exp.getTime());
-    document.cookie = `${name}=${value};expires=${exp.toGMTString()}`;
-    // 
+    document.cookie = `${name}=${value};expires=${exp.toGMTString()};domain=.aiblogs.cn`;
+    // document.cookie = `${name}=${value};expires=${exp.toGMTString()}`;
+    //
 }
 
 export function getcookie(name){

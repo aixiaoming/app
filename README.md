@@ -1,6 +1,6 @@
 [Русский](./README.ru-RU.md) | English | [简体中文](./README.zh-CN.md)
 
-# Ant Design Pro
+# App
 [![CircleCI Status](https://circleci.com/gh/ant-design/ant-design-pro.svg?style=svg)](https://circleci.com/gh/ant-design/ant-design-pro/)
 [![Dependencies](https://img.shields.io/david/ant-design/ant-design-pro.svg)](https://david-dm.org/ant-design/ant-design-pro)
 [![DevDependencies](https://img.shields.io/david/dev/ant-design/ant-design-pro.svg)](https://david-dm.org/ant-design/ant-design-pro#info=devDependencies&view=list)
@@ -96,6 +96,6 @@ Modern browsers and IE11.
 
 Any type of contribution is welcome, here are some examples of how you may contribute to this project:
 
-- Use Ant Design Pro in your daily work.
+- Use App in your daily work.
 - Submit [issues](http://github.com/ant-design/ant-design-pro/issues) to report bugs or ask questions.
 - Propose [pull requests](http://github.com/ant-design/ant-design-pro/pulls) to improve our code.

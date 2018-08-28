@@ -1,6 +1,6 @@
 Русский | [English](./README.md) | [简体中文](./README.zh-CN.md)
 
-# Ant Design Pro
+# App
 
 [![](https://img.shields.io/travis/ant-design/ant-design-pro/master.svg?style=flat-square)](https://travis-ci.org/ant-design/ant-design-pro)
 [![Build status](https://ci.appveyor.com/api/projects/status/67fxu2by3ibvqtat/branch/master?svg=true)](https://ci.appveyor.com/project/afc163/ant-design-pro/branch/master)
@@ -98,6 +98,6 @@ $ pro new
 
 Любые варианты распространения приветствуются! Вот несколько примероы того, как вы можете помочь распространению проекта:
 
-- Использовать Ant Design Pro в ежедневной работе.
+- Использовать App в ежедневной работе.
 - Создавать [задачи](http://github.com/ant-design/ant-design-pro/issues) заводить баги или отвечать на вопросы.
 - Делать [pull-реквесты](http://github.com/ant-design/ant-design-pro/pulls) для совершенствования нашего кода.

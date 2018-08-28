@@ -1,7 +1,7 @@
 import { routerRedux } from 'dva/router';
 import { stringify } from 'qs';
-import { fakeAccountLogin } from '../services/api';
-import { setAuthority } from '../utils/authority';
+import { fakeAccountLogin, logout } from '../services/api';
+import { setAuthority, setCookie } from '../utils/authority';
 import { reloadAuthorized } from '../utils/Authorized';
 import { getPageQuery } from '../utils/utils';
 
@@ -40,23 +40,20 @@ export default {
         yield put(routerRedux.replace(redirect || '/'));
       }
     },
-    *logout(_, { put }) {
-      yield put({
-        type: 'changeLoginStatus',
-        payload: {
-          status: false,
-          currentAuthority: 'guest',
-        },
-      });
-      reloadAuthorized();
-      yield put(
-        routerRedux.push({
-          pathname: '/user/login',
-          search: stringify({
-            redirect: window.location.href,
-          }),
-        })
-      );
+    *logout(_, { put, call }) {
+        const response = yield call(logout);
+        localStorage.clear();
+        setCookie('accessToken', '', new Date().getTime() - 1);
+        yield put({
+            type: 'changeLoginStatus',
+            payload: {
+                status: false,
+                currentAuthority: 'guest',
+            },
+        });
+        reloadAuthorized();
+
+
     },
   },
 

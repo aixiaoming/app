@@ -131,7 +131,7 @@ export default class BasicLayout extends React.PureComponent {
   getPageTitle() {
     const { routerData, location } = this.props;
     const { pathname } = location;
-    let title = 'Ant Design Pro';
+    let title = 'App';
     let currRouterData = null;
     // match params path
     for (const key in routerData) {
@@ -141,7 +141,7 @@ export default class BasicLayout extends React.PureComponent {
       }
     }
     if (currRouterData && currRouterData.name) {
-      title = `${currRouterData.name} - Ant Design Pro`;
+      title = `${currRouterData.name} - App`;
     }
     return title;
   }
@@ -290,7 +290,7 @@ export default class BasicLayout extends React.PureComponent {
               ]}
               copyright={
                 <Fragment>
-                  Copyright <Icon type="copyright" /> 2018 蚂蚁金服体验技术部出品
+                  Copyright <Icon type="copyright" /> 2018
                 </Fragment>
               }
             />
